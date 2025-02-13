@@ -15,8 +15,6 @@ scale_A <- A_T*a
 scale_B <- B_T*b
 
 #Multiply the matrix by a matrix
-#new_B <- matrix(scale_B, nrow=10, ncol=100)
-#new_matrix <- scale_A%*%new_B
 new_matrix <- scale_B%*%scale_A
 new_matrix
 
