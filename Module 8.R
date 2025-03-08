@@ -26,7 +26,7 @@ write.table(StudentAverage, "Student_Average.csv", sep=",")
 #Step 2 Convert the data set to a dataframe for names whos' name contains the letter i, 
 #then create a new data set with those names, Write those names to a file separated by comma’s (CSV)
 
-StudentNames = subset(studentData,grepl("[iI]",data$Name))
+StudentNames = subset(studentData,grepl("[iI]", studentData$Name))
 StudentNames
 write.table(StudentNames,"NamesWithI.csv",sep=",")
 
